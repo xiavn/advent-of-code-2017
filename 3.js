@@ -44,3 +44,22 @@ const findCenter = input => {
 };
 
 console.log(findCenter(input));
+
+// Part Two
+
+// Now take a grid, where each number is the spiral is the sum of all adjacent cells (including diagnals), that have been written so far.
+// Once a square is written is value does not change.
+// 147  142  133  122   59
+// 304    5    4    2   57
+// 330   10    1    1   54
+// 351   11   23   25   26
+// 362  747  806--->   ...
+
+// Example
+// The first square starts as 1.
+// Square 2 has only 1 adjacent (the first), so is also 1.
+// Square 3 has both the first and second (1 + 1), so is 2.
+// Square 4 has all three (1 + 1 + 2), so is 4.
+// Square 5 has only the first and fourth, so is 5.
+
+// What is the first value written that is larger than input?
